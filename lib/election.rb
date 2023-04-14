@@ -12,9 +12,7 @@ class Election
   end
 
   def candidates
-    @races.flat_map do |race|
-      race.candidates
-    end
+    @races.flat_map(&:candidates)
   end
 
   def vote_counts

@@ -2,7 +2,7 @@ require "./lib/candidate"
 
 RSpec.describe Candidate do
   before(:each) do
-    @diana = Candidate.new({name: "Diana D", party: :democrat})
+    @diana = Candidate.new({ name: "Diana D", party: :democrat })
   end
 
   describe "#initialize" do
