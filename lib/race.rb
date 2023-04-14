@@ -30,8 +30,7 @@ class Race
   end
 
   def tie?
-    vote_count = candidates.map(&:votes)
-    top_two = vote_count.max(2)
+    top_two = candidates.map(&:votes).max(2)
     top_two.first == top_two.last
   end
 end
